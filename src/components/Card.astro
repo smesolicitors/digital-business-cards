@@ -1,0 +1,68 @@
+---
+const feeEarner = {
+  firstName: "Ian",
+  lastName: "Stirzaker",
+  role: "Senior Partner",
+  email: "ian.stirzaker@smesolicitors.co.uk",
+  phone: "+44 1905 723561",
+  profileURL: "ian-stirzaker",
+  imageURL: "https://www.smesolicitors.co.uk/upload/team/ian-stirzaker.png",
+  department: "ForYou",
+};
+---
+
+<div
+  class="bg-white rounded-xl shadow-2xl transition-all duration-300 animate-fade-in md:h-auto min-h-fit max-w-md">
+  <div class="flex flex-col items-center">
+
+    <!-- Image Section -->
+    <div
+      class="items-center text-center align-middle bg-yellow-100 w-full p-8 rounded-t-xl">
+      <img
+        loading="eager"
+        src={feeEarner.imageURL}
+        alt="Jack Stirzaker"
+        class="rounded-full w-60 h-60 mx-auto"
+      />
+    </div>
+
+    <!-- Profile Section -->
+    <div class="items-center text-center w-full p-8">
+      <h1 class="text-5xl font-bold text-blue-950 mb-2">
+        {feeEarner.firstName}
+        {feeEarner.lastName}
+      </h1>
+      <h2 class="uppercase tracking-wide text-yellow-700 text-lg font-semibold ">{feeEarner.role}</h2>
+      <ul class="mt-5 rounded-lg border bg-amber-100">
+        <li class="flex">
+          <div class="rounded-max text-left">
+            <p>Phone Number</p>
+          </div>
+        </li>
+        <li>
+          <div class="rounded-max text-left">
+            <p>Email Address</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Links Section -->
+    <div
+      class="items-center text-center align-middle bg-gray-100 sm:w-full w-screen p-6 fixed bottom-0 sm:bottom-auto sm:relative">
+      <div>
+        <ul class="flex flex-row w-full justify-around gap-3">
+          <li>
+            <p>View my profile</p>
+          </li>
+          <li><p>Add my contact</p></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="bg-blue-950 sm:w-full w-screen p-2 sm:rounded-b-xl rounded-b-none text-center">
+      <p class="font-bold text-blue-100"><a href="https://www.smesolicitors.co.uk">www.smesolicitors.co.uk</a></p>
+    </div>
+
+  </div>
+</div>
