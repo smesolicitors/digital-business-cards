@@ -12,12 +12,12 @@ const feeEarner = {
 ---
 
 <div
-  class="bg-white rounded-xl shadow-2xl transition-all duration-300 animate-fade-in md:h-auto min-h-fit max-w-md">
+  class="flex flex-col justify-between bg-white md:rounded-xl md:shadow-2xl transition-all duration-300 animate-fade-in md:h-auto h-screen w-screen md:max-w-md md:mb-6">
   <div class="flex flex-col items-center">
 
     <!-- Image Section -->
     <div
-      class="items-center text-center align-middle bg-yellow-100 w-full p-8 rounded-t-xl">
+      class="items-center text-center align-middle bg-amber-100 w-full p-8 md:rounded-t-xl">
       <img
         loading="eager"
         src={feeEarner.imageURL}
@@ -27,42 +27,53 @@ const feeEarner = {
     </div>
 
     <!-- Profile Section -->
-    <div class="items-center text-center w-full p-8">
+    <div class="items-center text-center w-full p-8 grow h-full">
       <h1 class="text-5xl font-bold text-blue-950 mb-2">
         {feeEarner.firstName}
         {feeEarner.lastName}
       </h1>
-      <h2 class="uppercase tracking-wide text-yellow-700 text-lg font-semibold ">{feeEarner.role}</h2>
-      <ul class="mt-5 rounded-lg border bg-amber-100">
-        <li class="flex">
-          <div class="rounded-max text-left">
-            <p>Phone Number</p>
-          </div>
-        </li>
-        <li>
-          <div class="rounded-max text-left">
-            <p>Email Address</p>
-          </div>
-        </li>
+      <h2 class="uppercase tracking-wide text-yellow-700 text-lg font-semibold">{feeEarner.role}</h2>
+
+      <ul class="mt-5 rounded-xl border-2 border-amber-200 bg-amber-50 text-left">
+        <div class="border-b-2 border-amber-300 p-4">
+          <li class="flex">
+            <div class="rounded-full text-center bg-blue-950 p-6 mr-4"></div>
+            <div class="inline-block align-middle overflow-hidden">
+              <p class="uppercase tracking-wide text-yellow-700 text-sm font-semibold">Email me</p>
+              <a class="text-lg bold" href="mailto:">{feeEarner.email}</a>
+            </div>
+          </li>
+        </div>
+
+        <div class="p-4">
+          <li class="flex">
+            <div class="rounded-full text-center bg-blue-950 p-6 mr-4"></div>
+            <div class="inline-block align-middle overflow-hidden">
+              <p class="uppercase tracking-wide text-yellow-700 text-sm font-semibold">Call me</p>
+              <a class="text-lg bold" href="tel:">{feeEarner.phone}</a>
+            </div>
+          </li>
+        </div>
+      
       </ul>
     </div>
 
     <!-- Links Section -->
     <div
-      class="items-center text-center align-middle bg-gray-100 sm:w-full w-screen p-6 fixed bottom-0 sm:bottom-auto sm:relative">
-      <div>
-        <ul class="flex flex-row w-full justify-around gap-3">
+      class="items-center text-center align-middle bg-gray-100 md:w-full w-screen sticky md:bottom-auto md:relative bottom-0 border-t-2 border-gray-200">
+      <div class="divide-x divide-gray-300">
+        <ul class="flex flex-row w-full justify-around gap-3 p-6 ">
           <li>
             <p>View my profile</p>
           </li>
           <li><p>Add my contact</p></li>
         </ul>
       </div>
-
-    </div>
-    <div class="bg-blue-950 sm:w-full w-screen p-2 sm:rounded-b-xl rounded-b-none text-center">
+      <div class="bg-blue-950 md:w-full w-screen p-2 md:rounded-b-xl rounded-b-none text-center">
       <p class="font-bold text-blue-100"><a href="https://www.smesolicitors.co.uk">www.smesolicitors.co.uk</a></p>
     </div>
+    </div>
+    
 
   </div>
 </div>
