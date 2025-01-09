@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # Affinity lock files
 .afdesign~lock~
+
+# VSCode Files
+.vscode/
