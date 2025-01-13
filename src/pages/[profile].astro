@@ -3,8 +3,6 @@ import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
 import feeEarners from '../data/feeEarners.json';
 
-export const prerender = false;
-
 export async function getStaticPaths() {
   return feeEarners.map(feeEarner => ({
     params: { profile: feeEarner.profileURL }
@@ -20,7 +18,6 @@ if (!feeEarner) {
 }
 
 const pageTitle = `${feeEarner.firstName} ${feeEarner.lastName}`;
-
 ---
 
 <Layout pageTitle={pageTitle}>
