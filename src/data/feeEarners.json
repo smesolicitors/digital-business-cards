@@ -188,5 +188,15 @@
     "profileURL": "gemma-welch",
     "imageURL": "https://www.smesolicitors.co.uk/upload/team/gemma-welch.png",
     "department": "ForYou"
+  },
+  {
+    "firstName": "Test",
+    "lastName": "Testito",
+    "role": "Chief Tester",
+    "email": "jack.stirzaker@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "test-testito",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/jack-stirzaker.png",
+    "department": "ForYou"
   }
 ]
