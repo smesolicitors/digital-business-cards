@@ -1,0 +1,192 @@
+[
+  {
+    "firstName": "Megan",
+    "lastName": "Bayliss",
+    "role": "Court of Protection Caseworker",
+    "email": "megan.bayliss@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "megan-bayliss",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/megan-bayliss.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Will",
+    "lastName": "Cadbury",
+    "role": "Solicitor",
+    "email": "will.cadbury@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "will-cadbury",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/will-cadbury.png",
+    "department": "ForBusiness"
+  },
+  {
+    "firstName": "Jack",
+    "lastName": "Coleman",
+    "role": "Paralegal",
+    "email": "jack.coleman@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "jack-coleman",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/jack-coleman.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Denovan-Smith",
+    "role": "Solicitor",
+    "email": "david.denovan-smith@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "david-denovan-smith",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/david-denovan-smith.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Joanna",
+    "lastName": "Gardner",
+    "role": "Solicitor",
+    "email": "joanna.gardner@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "joanna-gardner",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/joanna-gardner.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Florence",
+    "lastName": "Goodwin",
+    "role": "Solicitor",
+    "email": "florence.goodwin@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "florence-goodwin",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/florence-goodwin.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Samantha",
+    "lastName": "Lloyd",
+    "role": "Partner",
+    "email": "samantha.lloyd@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "samantha-lloyd",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/samantha-lloyd.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Justine",
+    "lastName": "Lowe",
+    "role": "Solicitor",
+    "email": "justine.lowe@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "justine-lowe",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/justine-lowe.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Liz",
+    "lastName": "Stirk",
+    "role": "Partner",
+    "email": "liz.stirk@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "liz-stirk",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/liz-stirk.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Ryan",
+    "lastName": "McCormack",
+    "role": "Paralegal",
+    "email": "ryan.mccormack@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "ryan-mccormack",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/ryan-mccormack.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Philip",
+    "lastName": "Mullins",
+    "role": "Partner",
+    "email": "philip.mullins@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "philip-mullins",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/philip-mullins.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Eoin",
+    "lastName": "Murphy",
+    "role": "Solicitor",
+    "email": "eoin.murphy@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "eoin-murphy",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/eoin-murphy.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Brian",
+    "lastName": "O'Connell",
+    "role": "Consultant Solicitor",
+    "email": "brian.oconnell@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "brian-oconnell",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/brian-oconnell.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Amanda",
+    "lastName": "Piper",
+    "role": "Chartered Legal Executive",
+    "email": "amanda.piper@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "amanda-piper",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/amanda-piper.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Rachael",
+    "lastName": "Smart",
+    "role": "Solicitor",
+    "email": "rachael.smart@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "rachael-smart",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/rachael-smart.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Guy",
+    "lastName": "Salter",
+    "role": "Partner",
+    "email": "guy.salter@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "guy-salter",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/guy-salter.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Jack",
+    "lastName": "Smith",
+    "role": "Solicitor",
+    "email": "jack.smith@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "jack-smith",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/jack-smith.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Ian",
+    "lastName": "Stirzaker",
+    "role": "Senior Partner",
+    "email": "ian.stirzaker@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "ian-stirzaker",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/ian-stirzaker.png",
+    "department": "ForYou"
+  },
+  {
+    "firstName": "Gemma",
+    "lastName": "Welch",
+    "role": "Paralegal",
+    "email": "gemma.welch@smesolicitors.co.uk",
+    "phone": "+44 1905 723561",
+    "profileURL": "gemma-welch",
+    "imageURL": "https://www.smesolicitors.co.uk/upload/team/gemma-welch.png",
+    "department": "ForYou"
+  }
+]

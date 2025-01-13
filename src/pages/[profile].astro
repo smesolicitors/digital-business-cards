@@ -1,0 +1,28 @@
+---
+import Card from '../components/Card.astro';
+import Layout from '../layouts/Layout.astro';
+import feeEarners from '../data/feeEarners.json';
+
+export const prerender = false;
+
+export async function getStaticPaths() {
+  return feeEarners.map(feeEarner => ({
+    params: { profile: feeEarner.profileURL }
+  }));
+}
+
+const { profile } = Astro.params;
+const feeEarner = feeEarners.find(feeEarner => feeEarner.profileURL === profile);
+
+
+if (!feeEarner) {
+  return Astro.redirect('/404');
+}
+
+const pageTitle = `${feeEarner.firstName} ${feeEarner.lastName}`;
+
+---
+
+<Layout pageTitle={pageTitle}>
+  <Card {...feeEarner} />
+</Layout>

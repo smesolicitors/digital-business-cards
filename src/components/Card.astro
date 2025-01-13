@@ -1,14 +1,14 @@
 ---
-const feeEarner = {
-  firstName: "Ian",
-  lastName: "Stirzaker",
-  role: "Senior Partner",
-  email: "ian.stirzaker@smesolicitors.co.uk",
-  phone: "+44 1905 723561",
-  profileURL: "ian-stirzaker",
-  imageURL: "https://www.smesolicitors.co.uk/upload/team/ian-stirzaker.png",
-  department: "ForYou",
-};
+const {
+  firstName,
+  lastName,
+  role,
+  email,
+  phone,
+  profileURL,
+  imageURL,
+  department,
+} = Astro.props;
 ---
 
 <div
@@ -16,24 +16,24 @@ const feeEarner = {
   <div class="flex flex-col items-center">
     <!-- Image Section -->
     <div
-      class="items-center text-center align-middle bg-amber-100 w-full p-8 md:rounded-t-xl">
+      class="items-center text-center align-middle bg-amber-100 w-full h-auto p-8 md:rounded-t-xl">
       <img
         loading="eager"
-        src={feeEarner.imageURL}
-        alt={feeEarner.firstName + " " + feeEarner.lastName}
-        title={feeEarner.firstName + " " + feeEarner.lastName}
-        class="rounded-full w-60 h-60 mx-auto"
+        src={imageURL}
+        alt={firstName + " " + lastName}
+        title={firstName + " " + lastName}
+        class="rounded-full w-60 h-60 mx-auto object-scale-down"
       />
     </div>
 
     <!-- Profile Section -->
     <div class="items-center text-center w-full p-8 grow h-full">
       <h1 class="text-5xl font-bold text-blue-950 mb-2">
-        {feeEarner.firstName}
-        {feeEarner.lastName}
+        {firstName}
+        {lastName}
       </h1>
       <h2 class="uppercase tracking-wide text-yellow-700 text-lg font-semibold">
-        {feeEarner.role}
+        {role}
       </h2>
 
       <ul
@@ -41,7 +41,7 @@ const feeEarner = {
         <div class="border-b-2 border-amber-300 p-4">
           <li class="flex">
             <div
-              class="rounded-full align-middle text-center bg-blue-950 p-3 mr-3">
+              class="rounded-full align-middle text-center bg-blue-950 p-3 mr-3 w-fit h-fit">
               <svg
                 class="w-6 h-6"
                 viewBox="0 0 73 52"
@@ -75,9 +75,7 @@ const feeEarner = {
                 class="uppercase tracking-wide text-yellow-700 text-sm font-semibold">
                 Email me
               </p>
-              <a class="text-lg bold" href={"mailto:" + feeEarner.email}
-                >{feeEarner.email}</a
-              >
+              <a class="text-lg bold" href={"mailto:" + email}>{email}</a>
             </div>
           </li>
         </div>
@@ -85,7 +83,7 @@ const feeEarner = {
         <div class="p-4">
           <li class="flex">
             <div
-              class="rounded-full align-middle text-center bg-blue-950 p-3 mr-3">
+              class="rounded-full align-middle text-center bg-blue-950 p-3 mr-3 w-fit h-fit">
               <svg
                 class="w-6 h-6"
                 viewBox="0 0 66 66"
@@ -106,9 +104,7 @@ const feeEarner = {
                 class="uppercase tracking-wide text-yellow-700 text-sm font-semibold">
                 Call me
               </p>
-              <a class="text-lg bold" href={"tel:" + feeEarner.phone}
-                >{feeEarner.phone}</a
-              >
+              <a class="text-lg bold" href={"tel:" + phone}>{phone}</a>
             </div>
           </li>
         </div>
@@ -119,7 +115,7 @@ const feeEarner = {
     <div
       class="bg-gray-100 md:w-full w-screen sticky md:bottom-auto md:relative bottom-0 border-t-2 border-gray-200">
       <ul class="columns-2 p-6 text-lg h-full">
-        <li class="flex text-center items-center w-full">
+        <li class="flex items-center w-full justify-center">
           <div class="align-middle items-center w-5 h-auto mr-3">
             <svg
               viewBox="0 0 84 84"
@@ -138,12 +134,12 @@ const feeEarner = {
           <div class="inline-block">
             <a
               class="text-lg font-semibold"
-              href={"https://www.smesolicitors.co.uk/our-people/" +
-                feeEarner.profileURL}>View my profile</a
+              href={"https://www.smesolicitors.co.uk/our-people/" + profileURL}
+              >View my profile</a
             >
           </div>
         </li>
-        <li class="flex items-center w-full">
+        <li class="flex items-center w-full justify-center">
           <div class="align-middle items-center w-5 h-auto mr-3">
             <svg
               viewBox="0 0 79 79"
@@ -167,8 +163,8 @@ const feeEarner = {
           <div class="inline-block text-right">
             <a
               class="text-lg font-semibold"
-              href={"https://www.smesolicitors.co.uk/our-people/" +
-                feeEarner.profileURL}>Add my contact</a
+              href={"https://www.smesolicitors.co.uk/our-people/" + profileURL}
+              >Add my contact</a
             >
           </div>
         </li>
