@@ -2,21 +2,38 @@
 import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
 import feeEarners from '../data/feeEarners.json';
+import { generateVCard} from '../generateVCard.js';
 
+// Generate static paths
 export async function getStaticPaths() {
   return feeEarners.map(feeEarner => ({
     params: { profile: feeEarner.profileURL }
   }));
 }
 
+// Fetch data for the page
 const { profile } = Astro.params;
 const feeEarner = feeEarners.find(feeEarner => feeEarner.profileURL === profile);
 
-
+// Redirect to 404 if fee earner not found
 if (!feeEarner) {
   return Astro.redirect('/404');
 }
 
+// Generate vCard file - not going to use this?
+const vCardContent = generateVCard(feeEarner);
+
+// Serve vCard file
+if (Astro.request.url.endsWith('.vcf')) {
+  return new Response(vCardContent, {
+    headers: {
+      'Content-Type': 'text/vcard',
+      'Content-Disposition': `attachment; filename="${feeEarner.profileURL}.vcf"`
+    }
+  });
+}
+
+// Set page title
 const pageTitle = `${feeEarner.firstName} ${feeEarner.lastName}`;
 ---
 

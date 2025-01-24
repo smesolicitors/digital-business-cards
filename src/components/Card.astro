@@ -12,7 +12,7 @@ const {
 ---
 
 <div
-  class="z-10 flex flex-col justify-between bg-white md:rounded-xl md:shadow-2xl transition-all duration-300 animate-fade-in md:h-auto h-screen w-screen md:max-w-md md:mb-6">
+  class="z-10 flex flex-col justify-between bg-white md:rounded-xl md:shadow-2xl transition-all duration-300 animate-fade-in md:h-auto h-screen w-screen md:max-w-md md:mb-6 font-inter">
   <div class="flex flex-col items-center">
     <!-- Image Section -->
     <div
@@ -28,11 +28,11 @@ const {
 
     <!-- Profile Section -->
     <div class="items-center text-center w-full p-8 grow h-full">
-      <h1 class="text-5xl font-bold text-smenavy-600 mb-2">
+      <h1 class="text-5xl font-bold text-smenavy-600 mb-2 font-generalSans-500">
         {firstName}
         {lastName}
       </h1>
-      <h2 class="uppercase tracking-wide text-smemint-800 text-lg font-semibold">
+      <h2 class="uppercase tracking-wide text-smemint-800 text-lg font-semibold font-inter-300">
         {role}
       </h2>
 
@@ -165,7 +165,7 @@ const {
           <div class="inline-block">
             <a
               class="text-lg font-semibold text-smenavy-600"
-              href={"https://www.smesolicitors.co.uk/our-people/" + profileURL}
+              href={profileURL + ".vcf"}
               >Add my contact</a
             >
           </div>
