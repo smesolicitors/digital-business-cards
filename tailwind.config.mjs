@@ -28,7 +28,7 @@ export default {
           800: '#4f5b4c',
           900: '#282d26',
         },
-      },
+      }
     },
 	},
 	plugins: [],

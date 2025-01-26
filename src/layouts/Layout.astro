@@ -2,8 +2,6 @@
 const {
   pageTitle,
 } = Astro.props;
-
-import '../assets/base.css';
 ---
 
 <!doctype html>
@@ -13,10 +11,6 @@ import '../assets/base.css';
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle} | SME Solicitors</title>
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="preconnect" href="https://fonts.cdnfonts.com/">           
   </head>
   <body
     class="bg-white md:bg-blue-50 md:min-h-screen h-auto flex md:justify-center md:items-center md:p-4">
