@@ -1,10 +1,50 @@
-@import url("https://rsms.me/inter/inter.css");
-@import url("https://fonts.cdnfonts.com/css/general-sans");
+@import url('https://rsms.me/inter/inter.css') layer(base);
+@import url('https://fonts.cdnfonts.com/css/general-sans') layer(base);
 
 /* The integration's default injected base.css file */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-sme-navy-50: #e8ebef;
+  --color-sme-navy-100: #d0d6de;
+  --color-sme-navy-200: #a1adbe;
+  --color-sme-navy-300: #73849d;
+  --color-sme-navy-400: #445b7d;
+  --color-sme-navy-500: #15325c;
+  --color-sme-navy-600: #11284a;
+  --color-sme-navy-700: #0d1e37;
+  --color-sme-navy-800: #081425;
+  --color-sme-navy-900: #040a12;
+
+  --color-sme-mint-50: #f9fcf9;
+  --color-sme-mint-100: #f4f9f2;
+  --color-sme-mint-200: #e8f4e5;
+  --color-sme-mint-300: #ddeed9;
+  --color-sme-mint-400: #d1e9cc;
+  --color-sme-mint-500: #c6e3bf;
+  --color-sme-mint-600: #9eb699;
+  --color-sme-mint-700: #778873;
+  --color-sme-mint-800: #4f5b4c;
+  --color-sme-mint-900: #282d26;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 @layer base {
   @font-face {
