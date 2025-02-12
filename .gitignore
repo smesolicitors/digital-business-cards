@@ -28,3 +28,4 @@ pnpm-debug.log*
 
 # VSCode Files
 .vscode/
+src/assets/favicons/code.txt
