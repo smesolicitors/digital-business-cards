@@ -2,6 +2,8 @@
 const {
   pageTitle,
 } = Astro.props;
+
+import '../assets/base.css';
 ---
 
 <!doctype html>
@@ -21,7 +23,7 @@ const {
     <link rel="manifest" href="../assets/favicons/site.webmanifest" />
   </head>
   <body
-    class="bg-white md:bg-blue-50 md:min-h-screen h-auto flex md:justify-center md:items-center md:p-4">
+    class="bg-white md:bg-blue-50 md:min-h-screen h-auto flex md:justify-center md:items-center md:p-4 font-inter">
     <slot />
     <div class="z-0 bottom-0 fixed hidden md:block mb-4 text-center">
       <!-- SME Logo -->

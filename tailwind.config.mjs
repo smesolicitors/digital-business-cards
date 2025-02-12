@@ -28,7 +28,12 @@ export default {
           800: '#4f5b4c',
           900: '#282d26',
         },
-      }
+      },
+      fontFamily: {
+        generalSans: ['GeneralSans', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        interDisplay: ['InterDisplay', 'sans-serif'],
+      },
     },
 	},
 	plugins: [],
