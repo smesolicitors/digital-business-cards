@@ -100,16 +100,6 @@
     "department": "ForYou"
   },
   {
-    "firstName": "Philip",
-    "lastName": "Mullins",
-    "role": "Partner",
-    "email": "philip.mullins@smesolicitors.co.uk",
-    "phone": "+44 1905 723561",
-    "profileURL": "philip-mullins",
-    "imageURL": "https://www.smesolicitors.co.uk/upload/team/philip-mullins.png",
-    "department": "ForYou"
-  },
-  {
     "firstName": "Eoin",
     "lastName": "Murphy",
     "role": "Solicitor",
@@ -117,16 +107,6 @@
     "phone": "+44 1905 723561",
     "profileURL": "eoin-murphy",
     "imageURL": "https://www.smesolicitors.co.uk/upload/team/eoin-murphy.png",
-    "department": "ForYou"
-  },
-  {
-    "firstName": "Brian",
-    "lastName": "O'Connell",
-    "role": "Consultant Solicitor",
-    "email": "brian.oconnell@smesolicitors.co.uk",
-    "phone": "+44 1905 723561",
-    "profileURL": "brian-oconnell",
-    "imageURL": "https://www.smesolicitors.co.uk/upload/team/brian-oconnell.png",
     "department": "ForYou"
   },
   {
