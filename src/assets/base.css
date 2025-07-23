@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 /* Add General Sans */
 /**
@@ -320,3 +318,33 @@
         squared-characters: 6;         /* Squared characters */
     }
 }
+
+@theme {
+  /* smenavy */
+  --color-smenavy-50: oklch(93.89% 0.0063 255.48);
+  --color-smenavy-100: oklch(87.38% 0.0128 255.51);
+  --color-smenavy-200: oklch(74.37% 0.0280 257.05);
+  --color-smenavy-300: oklch(60.87% 0.0430 257.93);
+  --color-smenavy-400: oklch(46.72% 0.0623 258.00);
+  --color-smenavy-500: oklch(31.95% 0.0828 257.90);
+  --color-smenavy-600: oklch(27.85% 0.0694 258.17);
+  --color-smenavy-700: oklch(23.53% 0.0536 258.00);
+  --color-smenavy-800: oklch(19.03% 0.0389 257.07);
+  --color-smenavy-900: oklch(14.18% 0.0213 250.64);
+  /* smemint */
+  --color-smemint-50: oklch(98.80% 0.0050 145.54);
+  --color-smemint-100: oklch(97.64% 0.0106 136.56);
+  --color-smemint-200: oklch(95.41% 0.0236 139.44);
+  --color-smemint-300: oklch(93.08% 0.0333 139.74);
+  --color-smemint-400: oklch(90.85% 0.0465 140.28);
+  --color-smemint-500: oklch(88.50% 0.0575 139.60);
+  --color-smemint-600: oklch(74.99% 0.0486 140.26);
+  --color-smemint-700: oklch(60.69% 0.0369 139.72);
+  --color-smemint-800: oklch(45.61% 0.0282 139.43);
+  --color-smemint-900: oklch(28.97% 0.0143 136.68);
+
+  --font-generalSans: "GeneralSans", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-interDisplay: "InterDisplay", sans-serif;
+}
+
