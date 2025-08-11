@@ -11,22 +11,22 @@ import { Icon } from "astro-icon/components";
 ---
 
 <body
-  class="bg-white md:bg-blue-50 dark:bg-smenavy-900 md:min-h-screen grid md:grid-cols-2 font-inter">
+  class="bg-white md:bg-blue-50 dark:bg-smenavy-900 min-h-screen grid md:grid-cols-2 font-inter">
   <section
-    class="w-full h-10 hidden md:flex items-center justify-center md:h-screen md:bg-transparent">
-    <div class="hidden md:block">
+    class="w-full h-10 hidden md:flex items-center justify-center md:h-screen md:bg-transparent md:sticky md:top-0">
+    <div class="hidden md:block w-auto h-full">
       <Image
         src={bgImage}
         alt="The SME Solicitors office at 8 Sansome Walk, Worcester."
-        class="h-screen mx-auto object-cover"
+        class="h-screen w-full object-cover"
         loading="eager"
       />
     </div>
   </section>
   <section
-    class="flex md:justify-items-center top-0 lg:items-center justify-center min-h-screen overflow-auto md:p-4 object-scale-down">
+    class="flex md:justify-items-center top-0 lg:items-center justify-center flex-col flex-1 md:w-auto w-screen md:p-4 object-scale-down">
     <div
-      class="z-10 justify-between transition-all duration-300 animate-fade-in md:h-auto h-screen w-screen md:max-w-5xl m-6">
+      class="z-10 justify-between transition-all duration-300 animate-fade-in md:h-auto w-full md:max-w-5xl p-0 md:p-6 mt-10">
       <div class="items-center">
         <!-- Image Section -->
         <div
@@ -43,222 +43,191 @@ import { Icon } from "astro-icon/components";
           />
         </div>
 
-            <div class="not-prose overflow-auto rounded-full">
-              <div
-                class="bg-white shadow-xl dark:bg-smenavy-800">
-                <div class="flex overflow-x-auto">
-                  <div class="flex-none px-2 py-3 first:pl-3 last:pr-3">
-                    <div
-                      class="flex flex-row items-center justify-center gap-3 bg-gray-300 dark:bg-smenavy-500 border-2 border-smemint-500 dark:border-smenavy-600 rounded-3xl px-3 py-2">
-                      <Icon name="phone" class="text-xl text-gray-900 dark:text-gray-200" />
-                      <strong
-                        class="text-md font-medium text-gray-900 dark:text-gray-200"
-                        >01905 723561</strong
-                      >
-                    </div>
-                  </div>
-                  <div class="flex-none px-2 py-3 first:pl-6 last:pr-6">
-                    <div
-                      class="flex flex-row items-center justify-center gap-3 bg-gray-300 rounded-3xl px-2 pr-4 py-2">
-                      <Icon name="web-profile" class="text-2xl" />
-                      <strong
-                        class="text-md font-medium text-gray-900 dark:text-gray-200"
-                        >www.smesolicitors.co.uk</strong
-                      >
-                    </div>
-                  </div>
-                  <div class="flex-none px-2 py-3 first:pl-6 last:pr-6">
-                    <div
-                      class="flex flex-row items-center justify-center gap-3 bg-gray-300 rounded-3xl px-3 py-2">
-                      <Icon name="email" />
-                      <strong
-                        class="text-md font-medium text-gray-900 dark:text-gray-200"
-                        >info@smesolicitors.co.uk</strong
-                      >
-                    </div>
-                  </div>
+        <div class="justify-center w-full flex">
+          <h2
+            class="text-smenavy-500 dark:text-smenavy-50 text-3xl font-bold font-generalSans w-md text-center py-2 px-4">
+            Providing personal and proactive legal solutions for you and your
+            business.
+          </h2>
+        </div>
 
-                  <div class="flex-none px-2 py-3 first:pl-6 last:pr-6">
-                    <div
-                      class="flex flex-row items-center justify-center gap-3">
-                      <img
-                        src={WhatsApp.src}
-                        alt="WhatsApp"
-                        class="h-10 w-auto mx-auto object-scale-down"
-                      />
-                    </div>
+        <!-- Quick Links -->
+        <div
+          class="not-prose overflow-auto rounded-full w-fit md:mx-auto my-4 mx-4 justify-center">
+          <div class="bg-gray-100 shadow-xl dark:bg-smenavy-800">
+            <div class="flex overflow-x-auto">
+              <div class="flex-none pl-3 py-3">
+                <a href="https://gotos.me/s-wa" title="WhatsApp us">
+                  <div class="flex flex-row items-center justify-center gap-3">
+                    <img
+                      src={WhatsApp.src}
+                      alt="WhatsApp"
+                      class="h-auto w-10 mx-auto object-scale-down"
+                    />
                   </div>
-                  <div class="flex-none px-2 py-3 first:pl-6 last:pr-6">
-                    <div
-                      class="flex flex-row items-center justify-center gap-3">
-                      <img
-                        src={Facebook.src}
-                        alt="Facebook"
-                        class="h-10 w-auto mx-auto object-scale-down"
-                      />
-                    </div>
+                </a>
+              </div>
+              <div class="flex-none pl-3 py-3">
+                <a href="https://gotos.me/s-fb" title="Like us on Facebook">
+                  <div class="flex flex-row items-center justify-center gap-3">
+                    <img
+                      src={Facebook.src}
+                      alt="Facebook"
+                      class="h-auto w-10 mx-auto object-scale-down"
+                    />
                   </div>
-                  <div class="flex-none px-2 py-3 first:pl-6 last:pr-6">
-                    <div
-                      class="flex flex-row items-center justify-center gap-3">
-                      <img
-                        src={linkedIn.src}
-                        alt="LinkedIn"
-                        class="h-10 w-auto mx-auto object-scale-down"
-                      />
-                    </div>
+                </a>
+              </div>
+              <div class="flex-none pl-3 py-3">
+                <a
+                  href="https://gotos.me/s-li"
+                  title="Connect with us on LinkedIn">
+                  <div class="flex flex-row items-center justify-center gap-3">
+                    <img
+                      src={linkedIn.src}
+                      alt="LinkedIn"
+                      class="h-auto w-10 mx-auto object-scale-down"
+                    />
                   </div>
-                  <div class="flex-none px-2 py-3 first:pl-6 last:pr-6">
-                    <div
-                      class="flex flex-row items-center justify-center gap-3">
-                      <img
-                        src={Instagram.src}
-                        alt="Instagram"
-                        class="h-10 w-auto mx-auto object-scale-down"
-                      />
-                    </div>
+                </a>
+              </div>
+              <div class="flex-none pl-3 py-3">
+                <a href="https://gotos.me/s-ig" title="Follow us on Instagram">
+                  <div class="flex flex-row items-center justify-center gap-3">
+                    <img
+                      src={Instagram.src}
+                      alt="Instagram"
+                      class="h-auto w-10 mx-auto object-scale-down"
+                    />
                   </div>
-                </div>
+                </a>
+              </div>
+              <div class="flex-none pl-3 py-3">
+                <a
+                  href="https://gotos.me/conves"
+                  title="Get your free Conveyancing Estimate">
+                  <div
+                    class="flex flex-row items-center justify-center gap-3 bg-gray-300 dark:bg-smenavy-500 rounded-3xl px-3 py-2">
+                    <strong
+                      class="text-md font-medium text-gray-900 dark:text-gray-200"
+                      >Conveyancing Estimate</strong
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="flex-none px-3 py-3">
+                <a href="https://gotos.me/careers" title="Join our team">
+                  <div
+                    class="flex flex-row items-center justify-center gap-3 bg-gray-300 dark:bg-smenavy-500 rounded-3xl px-3 py-2">
+                    <strong
+                      class="text-md font-medium text-gray-900 dark:text-gray-200"
+                      >Join our team</strong
+                    >
+                  </div>
+                </a>
               </div>
             </div>
+          </div>
+        </div>
       </div>
+      <!-- End Quick Links -->
 
-      <div class="justify-center w-full flex">
-        <h2
-          class="text-smenavy-500 dark:text-smenavy-50 text-3xl font-bold font-generalSans w-md text-center py-5">
-          Providing personal and proactive legal solutions for you and your
-          business.
-        </h2>
-      </div>
-
-      <!-- Profile Section -->
+      <!-- Links Section -->
       <div
-        class="items-center text-center w-full p-8 grow h-full bg-white dark:bg-smenavy-800 flex-col rounded-t-2xl">
+        class="items-center text-center w-full p-6 bg-gray-50 dark:bg-smenavy-800 flex-col rounded-t-2xl">
         <ul
           class="rounded-2xl border-2 border-smemint-500 bg-smemint-100 dark:bg-smenavy-700 dark:border-smenavy-600 text-left">
-          <div
-            class="border-b-2 border-smemint-500 dark:border-smenavy-600 p-4">
-            <a href="mailto:info@smesolicitors.co.uk">
-              <li class="flex">
-                <div
-                  class="rounded-full align-middle text-center bg-smenavy-500 dark:bg-smenavy-500 p-3 mr-3 w-fit h-fit">
-                  <svg
-                    class="w-6 h-6 fill-current text-smenavy-50"
-                    viewBox="0 0 73 52"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xml:space="preserve"
-                    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                    <g transform="matrix(2,0,0,2,-261.808,-1931.55)">
-                      <clipPath id="_clip1">
-                        <rect x="130.889" y="965.773" width="36" height="25.5"
-                        ></rect>
-                      </clipPath>
-                      <g clip-path="url(#_clip1)">
-                        <g
-                          transform="matrix(1.28965,0,0,-1.28965,128.324,987.632)">
-                          <path
-                            d="M14.167,6.622C14.43,6.42 14.718,6.266 15.031,6.16C15.345,6.053 15.667,6 15.998,6C16.329,6 16.651,6.053 16.965,6.16C17.278,6.266 17.566,6.42 17.829,6.622L29.449,15.676C29.169,16.075 28.813,16.387 28.38,16.612C27.948,16.837 27.488,16.95 27,16.95L5,16.95C4.483,16.949 3.998,16.822 3.546,16.569C3.095,16.316 2.733,15.97 2.461,15.53L14.167,6.622Z"
-                          ></path>
-                        </g>
-                        <g
-                          transform="matrix(1.28965,0,0,-1.28965,128.324,1003.67)">
-                          <path
-                            d="M19.054,17.472C18.617,17.136 18.137,16.879 17.615,16.702C17.092,16.525 16.556,16.436 16.004,16.436C15.453,16.436 14.916,16.525 14.393,16.702C13.871,16.879 13.391,17.136 12.954,17.472L2,25.802L2,12.385C2,11.987 2.076,11.604 2.228,11.237C2.381,10.869 2.597,10.545 2.879,10.264C3.16,9.982 3.484,9.766 3.852,9.613C4.219,9.461 4.602,9.385 5,9.385L27,9.385C27.398,9.385 27.781,9.461 28.148,9.613C28.516,9.766 28.84,9.982 29.121,10.264C29.403,10.545 29.619,10.869 29.772,11.237C29.924,11.604 30,11.987 30,12.385L30,26L19.054,17.472Z"
-                          ></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-                <div class="inline-block align-middle overflow-hidden">
-                  <p
-                    class="uppercase tracking-wide text-smemint-700 dark:text-smemint-600 text-sm font-semibold">
-                    Email us
-                  </p>
-                  <a
-                    class="text-lg bold text-smenavy-600 dark:text-smenavy-100 md:select-all"
-                    href="mailto:info@smesolicitors.co.uk"
-                    >info@smesolicitors.co.uk</a
-                  >
-                </div>
-              </li>
+          <li class="flex border-b-2 border-smemint-500 dark:border-smenavy-600 p-4">
+            <a href="mailto:info@smesolicitors.co.uk" class="flex w-full">
+              <div
+                class="rounded-full align-middle text-center bg-smenavy-500 dark:bg-smenavy-500 p-3 mr-3 w-fit h-fit">
+                <Icon
+                  name="email"
+                  class="text-xl h-6 w-6 fill-current text-smenavy-50"
+                />
+              </div>
+              <div class="inline-block align-middle overflow-hidden">
+                <p
+                  class="uppercase tracking-wide text-smemint-700 dark:text-smemint-600 text-sm font-semibold">
+                  Email us
+                </p>
+                <span
+                  class="text-lg bold text-smenavy-600 dark:text-smenavy-100 md:select-all"
+                  >info@smesolicitors.co.uk</span
+                >
+              </div>
             </a>
-          </div>
-
-          <div
-            class="border-b-2 border-smemint-500 dark:border-smenavy-600 p-4">
-            <li class="flex">
+          </li>
+          <li class="flex border-b-2 border-smemint-500 dark:border-smenavy-600 p-4">
+            <a href="tel:+441905723561" class="flex w-full">
               <div
                 class="rounded-full align-middle text-center bg-smenavy-500 p-3 mr-3 w-fit h-fit">
-                <svg
-                  class="w-6 h-6 fill-current text-smenavy-50"
-                  viewBox="0 0 66 66"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xml:space="preserve"
-                  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                  <g transform="matrix(2.85469,0,0,-2.85469,-11.4187,79.2282)">
-                    <path
-                      d="M21.225,12.865C20.819,13.103 20.32,13.098 19.916,12.858L17.87,11.639C17.412,11.366 16.84,11.398 16.42,11.726C15.694,12.293 14.525,13.247 13.508,14.264C12.491,15.281 11.537,16.45 10.97,17.176C10.642,17.596 10.61,18.168 10.883,18.626L12.102,20.672C12.343,21.076 12.345,21.579 12.107,21.985L9.105,27.113C8.814,27.609 8.236,27.853 7.677,27.716C7.134,27.584 6.429,27.262 5.69,26.522C3.376,24.208 2.147,20.305 10.849,11.603C19.551,2.901 23.453,4.129 25.768,6.444C26.509,7.185 26.83,7.891 26.963,8.435C27.098,8.993 26.858,9.567 26.363,9.857C25.127,10.58 22.461,12.141 21.225,12.865Z"
-                    ></path>
-                  </g>
-                </svg>
+                <Icon
+                  name="phone"
+                  class="text-xl h-6 w-6 fill-current text-smenavy-50"
+                />
               </div>
               <div class="inline-block align-middle overflow-hidden">
                 <p
                   class="uppercase tracking-wide text-smemint-700 dark:text-smemint-600 text-sm font-semibold">
                   Call us
                 </p>
-                <a
+                <span
                   class="text-lg bold text-smenavy-600 dark:text-smenavy-100 md:select-all"
-                  href="tel:+441905723561">01905 723561</a
+                  >01905 723561</span
                 >
               </div>
-            </li>
-          </div>
-          <div class="p-4">
-            <li class="flex">
+            </a>
+          </li>
+          <li class="flex border-b-2 border-smemint-500 dark:border-smenavy-600 p-4">
+            <a href="https://www.smesolicitors.co.uk/" target="_blank" class="flex w-full">
               <div
                 class="rounded-full align-middle text-center bg-smenavy-500 p-3 mr-3 w-fit h-fit">
-                <svg
-                  class="w-6 h-6 fill-current text-smenavy-50"
-                  viewBox="0 0 84 84"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xml:space="preserve"
-                  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                  <g transform="matrix(3.80015,0,0,-3.80015,-3.81093,87.3537)">
-                    <path
-                      d="M23,11.991C23,12.592 22.951,13.189 22.854,13.782C22.756,14.375 22.611,14.956 22.418,15.525C22.224,16.094 21.986,16.644 21.703,17.174C21.42,17.704 21.096,18.207 20.73,18.684C20.364,19.161 19.962,19.605 19.523,20.016C19.085,20.427 18.616,20.799 18.116,21.133C17.617,21.467 17.093,21.758 16.546,22.006C15.998,22.254 15.434,22.456 14.854,22.612C14.273,22.767 13.684,22.875 13.086,22.934C12.488,22.993 11.889,23.003 11.289,22.963C10.69,22.924 10.097,22.836 9.512,22.7C8.927,22.564 8.356,22.38 7.801,22.15C7.246,21.921 6.713,21.647 6.203,21.33C5.692,21.012 5.211,20.656 4.759,20.259C4.308,19.863 3.891,19.433 3.51,18.968C3.128,18.504 2.788,18.011 2.487,17.491C2.001,16.656 1.632,15.772 1.38,14.839C1.129,13.906 1.003,12.957 1.003,11.991C1.003,11.025 1.129,10.075 1.38,9.142C1.632,8.21 2.001,7.326 2.487,6.491C2.5,6.469 2.517,6.45 2.53,6.428L2.535,6.417L2.542,6.41C2.662,6.205 2.789,6.003 2.923,5.806C3.056,5.609 3.196,5.417 3.342,5.229C3.488,5.041 3.639,4.858 3.797,4.68C3.955,4.502 4.119,4.33 4.288,4.162C4.457,3.995 4.631,3.833 4.811,3.677C4.99,3.521 5.175,3.371 5.364,3.227C5.553,3.083 5.747,2.945 5.945,2.814C6.144,2.683 6.346,2.558 6.553,2.44C6.759,2.321 6.969,2.21 7.183,2.105C7.396,2.001 7.613,1.903 7.833,1.813C8.053,1.722 8.276,1.639 8.501,1.563C8.727,1.487 8.954,1.418 9.184,1.357C9.414,1.296 9.646,1.242 9.879,1.196C10.113,1.15 10.347,1.112 10.583,1.081C10.819,1.05 11.056,1.027 11.293,1.011C11.53,0.996 11.768,0.988 12.006,0.988C12.244,0.988 12.482,0.996 12.719,1.011C12.956,1.027 13.193,1.05 13.429,1.081C13.665,1.112 13.899,1.15 14.133,1.196C14.366,1.242 14.598,1.296 14.828,1.357C15.058,1.418 15.285,1.487 15.511,1.563C15.736,1.639 15.959,1.722 16.179,1.813C16.399,1.903 16.616,2.001 16.829,2.105C17.043,2.21 17.253,2.321 17.459,2.44C17.666,2.558 17.868,2.683 18.067,2.814C18.265,2.945 18.459,3.083 18.648,3.227C18.837,3.371 19.022,3.521 19.201,3.677C19.381,3.833 19.555,3.995 19.724,4.162C19.893,4.33 20.057,4.502 20.215,4.68C20.373,4.858 20.524,5.041 20.67,5.229C20.816,5.417 20.956,5.609 21.089,5.806C21.223,6.003 21.35,6.205 21.47,6.41L21.47,6.417C21.482,6.439 21.498,6.457 21.511,6.478C22.505,8.181 23.001,10.019 23,11.991ZM16.867,9.491C16.954,10.322 16.998,11.155 17,11.991C16.998,12.826 16.954,13.66 16.867,14.491C18.036,14.714 19.158,15.081 20.233,15.591C20.486,15.024 20.677,14.438 20.806,13.831C20.935,13.224 21,12.611 21,11.991C21,11.37 20.935,10.757 20.806,10.15C20.677,9.544 20.486,8.957 20.233,8.391C19.157,8.9 18.035,9.266 16.867,9.491ZM12,2.991C11.125,2.991 9.97,4.791 9.382,7.823C11.127,8.021 12.873,8.021 14.618,7.823C14.03,4.791 12.875,2.991 12,2.991ZM3.767,8.391C3.514,8.957 3.323,9.544 3.194,10.15C3.065,10.757 3,11.37 3,11.991C3,12.611 3.065,13.224 3.194,13.831C3.323,14.438 3.514,15.024 3.767,15.591C4.843,15.082 5.965,14.715 7.133,14.491C6.955,12.824 6.955,11.157 7.133,9.491C5.964,9.267 4.842,8.9 3.767,8.391ZM4.827,17.406C4.913,17.52 5.009,17.625 5.099,17.734C5.248,17.913 5.399,18.09 5.559,18.256C5.665,18.366 5.778,18.467 5.89,18.57C6.051,18.72 6.215,18.87 6.39,19.005C6.512,19.105 6.638,19.194 6.764,19.285C6.939,19.411 7.118,19.53 7.302,19.644C7.435,19.726 7.57,19.804 7.707,19.88C7.898,19.98 8.093,20.08 8.291,20.169C8.418,20.227 8.546,20.285 8.676,20.338C8.078,19.104 7.66,17.811 7.421,16.461C6.505,16.646 5.622,16.934 4.772,17.323C4.791,17.35 4.807,17.38 4.827,17.406ZM16.3,19.877C16.433,19.804 16.563,19.727 16.693,19.648C16.882,19.532 17.067,19.408 17.247,19.277C17.368,19.19 17.488,19.103 17.605,19.009C17.783,18.867 17.954,18.714 18.122,18.557C18.227,18.457 18.334,18.364 18.434,18.257C18.604,18.083 18.761,17.896 18.917,17.708C19.001,17.608 19.089,17.508 19.169,17.408C19.19,17.381 19.206,17.35 19.226,17.323C18.376,16.934 17.493,16.647 16.577,16.462C16.339,17.811 15.923,19.103 15.327,20.337C15.455,20.286 15.58,20.229 15.705,20.172C15.909,20.08 16.108,19.983 16.3,19.877ZM9,11.991C9,12.763 9.038,13.491 9.1,14.179C10.063,14.059 11.03,13.996 12,13.991C12.97,13.996 13.937,14.059 14.9,14.179C14.964,13.49 15,12.763 15,11.991C15,11.219 14.962,10.491 14.9,9.802C12.967,10.027 11.033,10.027 9.1,9.802C9.038,10.491 9,11.219 9,11.991ZM14.618,16.159C12.873,15.96 11.127,15.96 9.382,16.159C9.97,19.191 11.125,20.991 12,20.991C12.875,20.991 14.03,19.191 14.618,16.159ZM4.772,6.659C5.622,7.047 6.505,7.334 7.421,7.519C7.659,6.168 8.077,4.875 8.674,3.64C7.087,4.275 5.786,5.282 4.772,6.659ZM15.326,3.64C15.923,4.875 16.341,6.168 16.579,7.519C17.495,7.334 18.378,7.047 19.228,6.659C18.214,5.281 16.914,4.275 15.326,3.64L15.326,3.64Z"
-                    ></path>
-                  </g>
-                </svg>
+                <Icon
+                  name="web-profile"
+                  class="text-xl h-6 w-6 fill-current text-smenavy-50"
+                />
               </div>
               <div class="inline-block align-middle overflow-hidden">
                 <p
                   class="uppercase tracking-wide text-smemint-700 dark:text-smemint-600 text-sm font-semibold">
                   Visit our website
                 </p>
-                <a
+                <span
                   class="text-lg bold text-smenavy-600 dark:text-smenavy-100 md:select-all"
-                  href="https://www.smesolicitors.co.uk/"
-                  >www.smesolicitors.co.uk</a
+                  >www.smesolicitors.co.uk</span
                 >
               </div>
-            </li>
-          </div>
+            </a>
+          </li>
+          <li class="flex p-4">
+            <a href="https://maps.app.goo.gl/TxDYvwy7o6Rh9GpG8" target="_blank" class="flex w-full">
+              <div
+                class="rounded-full align-middle text-center bg-smenavy-500 p-3 mr-3 w-fit h-fit">
+                <Icon
+                  name="location"
+                  class="text-xl h-6 w-6 fill-current text-smenavy-50"
+                />
+              </div>
+              <div class="inline-block align-middle overflow-hidden">
+                <p
+                  class="uppercase tracking-wide text-smemint-700 dark:text-smemint-600 text-sm font-semibold">
+                  Find our offices
+                </p>
+                <span
+                  class="text-lg bold text-smenavy-600 dark:text-smenavy-100 md:select-all"
+                  >8 Sansome Walk, WR1 1LW</span
+                >
+              </div>
+            </a>
+          </li>
         </ul>
       </div>
 
-      <!-- Links Section -->
       <div
-        class="bg-smenavy-500 md:w-full w-screen p-2 md:rounded-b-xl rounded-b-none text-center">
+        class="bg-smenavy-500 md:w-full w-full p-2 md:rounded-b-xl rounded-b-none text-center">
         <p class="font-medium text-smenavy-50 font-generalSans">
-          <a href="https://www.smesolicitors.co.uk">www.smesolicitors.co.uk</a>
+          <a href="https://www.smesolicitors.co.uk">&copy; 2025 SME Solicitors</a>
         </p>
       </div>
     </div>
